@@ -1,3 +1,28 @@
 <resources>
     <string name="app_name">NewsAppJetpack</string>
+
+    <string name="short_news_title_1">Joe Harris Out 4–8 Weeks</string>
+    <string name="short_news_text_1">Joe Harris Out 4–8 Weeks TEXT</string>
+    <string name="short_news_date_1">29/11/2021</string>
+
+
+    <string name="short_news_title_2">Booker, Young named Players of the Week</string>
+    <string name="short_news_text_2">Booker, Young named Players of the Week TEXT</string>
+    <string name="short_news_date_2">28/11/2021</string>
+
+    <string name="large_news_title_1">Nuggets\'s Porter Jr. out for the rest of the season</string>
+    <string name="large_news_text_1">Nuggets\'s Porter Jr. out for the rest of the season TEXT</string>
+    <string name="large_news_date_1">25/11/2021</string>
+
+
+    <string name="large_news_title_2">Thibodeu: Walker out of Knicks rotation</string>
+    <string name="large_news_text_2">Thibodeu: Walker out of Knicks rotation TEXT</string>
+    <string name="large_news_date_2">30/11/2021</string>
+
+    <string name="news">News</string>
+    <string name="profile">Profile</string>
+    <string name="key_dates">Key Dates</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>
