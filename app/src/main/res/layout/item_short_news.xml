@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="shortNews"
+            type="com.canonal.newsappjetpack.model.ShortNews" />
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/rlShortNews"
+        android:layout_width="match_parent"
+        android:padding="8dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivShortNewsImage"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:background="@{shortNews.image}"
+            android:layout_alignParentStart="true"
+            android:contentDescription="@string/short_news_image"
+            android:scaleType="fitCenter"
+            tools:background="@drawable/type_two_image" />
+
+        <TextView
+            android:id="@+id/tvShortNewsTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/ivShortNewsImage"
+            android:layout_alignBottom="@+id/ivShortNewsImage"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/ivShortNewsImage"
+            android:gravity="center_vertical"
+            android:text="@{shortNews.title}"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:text="@string/short_news_title_1" />
+
+
+    </RelativeLayout>
+</layout>

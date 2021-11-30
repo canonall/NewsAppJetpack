@@ -22,7 +22,8 @@
     <string name="news">News</string>
     <string name="profile">Profile</string>
     <string name="key_dates">Key Dates</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="short_news_image">short news image</string>
+    <string name="large_news_image">large news image</string>
 
 </resources>

@@ -8,11 +8,20 @@
     <fragment
         android:id="@+id/newsFragment"
         android:name="com.canonal.newsappjetpack.fragment.NewsFragment"
-        tools:layout="@layout/fragment_news"
-        android:label="NewsFragment" />
+        android:label="NewsFragment"
+        tools:layout="@layout/fragment_news">
+        <action
+            android:id="@+id/action_newsFragment_to_newsDetailFragment"
+            app:destination="@id/newsDetailFragment" />
+    </fragment>
     <fragment
         android:id="@+id/profileFragment"
         android:name="com.canonal.newsappjetpack.fragment.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/newsDetailFragment"
+        android:name="com.canonal.newsappjetpack.fragment.NewsDetailFragment"
+        android:label="NewsDetailFragment"
+        tools:layout="@layout/fragment_news_detail" />
 </navigation>

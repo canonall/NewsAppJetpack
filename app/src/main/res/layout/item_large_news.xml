@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="largeNews"
+            type="com.canonal.newsappjetpack.model.LargeNews" />
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/rlLargeNews"
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivLargeNewsImage"
+            android:layout_width="match_parent"
+            android:background="@{largeNews.image}"
+            android:layout_height="197dp"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/large_news_image"
+            android:scaleType="fitCenter"
+            tools:background="@drawable/type_one_image" />
+
+        <TextView
+            android:id="@+id/tvLargeNewsTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivLargeNewsImage"
+            android:text="@{largeNews.title}"
+            android:layout_alignStart="@+id/ivLargeNewsImage"
+            android:layout_alignEnd="@+id/ivLargeNewsImage"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:text="@string/large_news_title_1" />
+
+    </RelativeLayout>
+</layout>
