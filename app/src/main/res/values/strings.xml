@@ -3,20 +3,22 @@
 
     <string name="short_news_title_1">Joe Harris Out 4–8 Weeks</string>
     <string name="short_news_text_1">Joe Harris Out 4–8 Weeks TEXT</string>
+    <string name="short_news_url_1">https://a.espncdn.com/photo/2021/1202/r945725_600x400_3-2.jpg</string>
     <string name="short_news_date_1">29/11/2021</string>
-
 
     <string name="short_news_title_2">Booker, Young named Players of the Week</string>
     <string name="short_news_text_2">Booker, Young named Players of the Week TEXT</string>
+    <string name="short_news_url_2">https://a.espncdn.com/photo/2021/1202/r945725_600x400_3-2.jpg</string>
     <string name="short_news_date_2">28/11/2021</string>
 
     <string name="large_news_title_1">Nuggets\'s Porter Jr. out for the rest of the season</string>
     <string name="large_news_text_1">Nuggets\'s Porter Jr. out for the rest of the season TEXT</string>
+    <string name="large_news_url_1">https://a.espncdn.com/photo/2021/1202/r945725_600x400_3-2.jpg</string>
     <string name="large_news_date_1">25/11/2021</string>
-
 
     <string name="large_news_title_2">Thibodeu: Walker out of Knicks rotation</string>
     <string name="large_news_text_2">Thibodeu: Walker out of Knicks rotation TEXT</string>
+    <string name="large_news_url_2">https://a.espncdn.com/photo/2021/1202/r945725_600x400_3-2.jpg</string>
     <string name="large_news_date_2">30/11/2021</string>
 
     <string name="news">News</string>
@@ -25,5 +27,9 @@
 
     <string name="short_news_image">short news image</string>
     <string name="large_news_image">large news image</string>
+    <string name="detail_news_image">detail news image</string>
+    <string name="toolbar_nba_image">toolbar nba image</string>
+
+    <string name="nba">NBA</string>
 
 </resources>

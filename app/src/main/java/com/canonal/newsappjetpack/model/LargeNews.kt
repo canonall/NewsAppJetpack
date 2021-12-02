@@ -1,16 +1,14 @@
 package com.canonal.newsappjetpack.model
 
-import android.graphics.drawable.Drawable
 
 class LargeNews(
     title: String,
     text: String,
-    image: Drawable?,
-    date: String
-) :
-    News(
-        title,
-        text,
-        image,
-        date
-    )
+    imageUrl: String,
+    date: String,
+) : News(
+    title,
+    text,
+    imageUrl,
+    date,
+)

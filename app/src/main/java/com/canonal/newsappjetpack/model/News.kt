@@ -1,10 +1,12 @@
 package com.canonal.newsappjetpack.model
 
-import android.graphics.drawable.Drawable
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
 
-abstract class News(
+@Parcelize
+open class News(
     val title: String,
     val text: String,
-    val image: Drawable?,
-    val date: String
-)
+    val imageUrl: String,
+    val date: String,
+): Parcelable

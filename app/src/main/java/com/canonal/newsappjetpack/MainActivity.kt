@@ -54,6 +54,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun setToolBar() {
         setSupportActionBar(binding.toolbar)
+        supportActionBar?.setDisplayShowTitleEnabled(false)
     }
 
     private fun setBottomNavBar(navController: NavController) {

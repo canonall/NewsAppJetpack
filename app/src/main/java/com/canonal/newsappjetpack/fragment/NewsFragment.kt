@@ -8,7 +8,6 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.NavOptions
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.canonal.newsappjetpack.R
 import com.canonal.newsappjetpack.adapter.NewsAdapter
 import com.canonal.newsappjetpack.databinding.FragmentNewsBinding
 import com.canonal.newsappjetpack.model.News
@@ -37,21 +36,17 @@ class NewsFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-
         val navOptions = AnimationUtil.getFragmentSlideNavOptions()
         setupNewsRecyclerView(navOptions)
-
-
     }
 
     private fun setupNewsRecyclerView(navOptions: NavOptions) {
         val newsAdapter = NewsAdapter(newsList) { news ->
+            val action = NewsFragmentDirections.actionNewsFragmentToNewsDetailFragment(news)
             findNavController().navigate(
-                R.id.action_newsFragment_to_newsDetailFragment,
-                null,
+                action,
                 navOptions
             )
-
         }
         binding.rvNews.adapter = newsAdapter
         binding.rvNews.layoutManager = LinearLayoutManager(requireContext())

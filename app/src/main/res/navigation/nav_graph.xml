@@ -13,6 +13,7 @@
         <action
             android:id="@+id/action_newsFragment_to_newsDetailFragment"
             app:destination="@id/newsDetailFragment" />
+
     </fragment>
     <fragment
         android:id="@+id/profileFragment"
@@ -23,5 +24,10 @@
         android:id="@+id/newsDetailFragment"
         android:name="com.canonal.newsappjetpack.fragment.NewsDetailFragment"
         android:label="NewsDetailFragment"
-        tools:layout="@layout/fragment_news_detail" />
+        tools:layout="@layout/fragment_news_detail">
+
+        <argument
+            android:name="news"
+            app:argType="com.canonal.newsappjetpack.model.News" />
+    </fragment>
 </navigation>

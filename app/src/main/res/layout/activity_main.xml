@@ -21,16 +21,37 @@
 
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbar"
+                style="@style/Base_ToolbarStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:background="@color/purple_500" />
+                android:layout_alignParentTop="true">
+
+                <ImageView
+                    android:id="@+id/ivToolbarLogo"
+                    android:layout_width="25dp"
+                    android:layout_height="21dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/ic_nba"
+                    android:contentDescription="@string/toolbar_nba_image" />
+
+                <TextView
+                    android:id="@+id/tvToolbarTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="15dp"
+                    android:text="@string/nba"
+                    android:textColor="@color/nba_white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </androidx.appcompat.widget.Toolbar>
 
             <androidx.fragment.app.FragmentContainerView
                 android:id="@+id/news_nav_host_fragment"
                 android:name="androidx.navigation.fragment.NavHostFragment"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_above="@+id/bottomBar"
                 android:layout_below="@id/toolbar"
                 app:defaultNavHost="true"
                 app:navGraph="@navigation/nav_graph" />
