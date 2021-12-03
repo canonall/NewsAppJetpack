@@ -21,10 +21,9 @@ class NewsDetailDeepLinkProvider : AppWidgetProvider() {
 
         val newsList = DummyData.getNewsData(context)
         val args = Bundle()
-        args.putString("myKey", newsList[0].title)
-        args.putString("myKey", newsList[1].title)
-        args.putString("myKey", newsList[2].title)
-        args.putString("myKey", newsList[3].title)
+        args.putParcelable("myKey0", newsList[0])
+        args.putParcelable("myKey1", newsList[1])
+        args.putParcelable("myKey2", newsList[2])
 
         val pendingIntent = NavDeepLinkBuilder(context)
             .setGraph(R.navigation.nav_graph)
@@ -32,7 +31,7 @@ class NewsDetailDeepLinkProvider : AppWidgetProvider() {
             .setArguments(args)
             .createPendingIntent()
 
-        remoteViews.setOnClickPendingIntent(R.id.btnWidget, pendingIntent)
+        remoteViews.setOnClickPendingIntent(R.id.tvWidget, pendingIntent)
         appWidgetManager.updateAppWidget(appWidgetIds, remoteViews)
 
     }

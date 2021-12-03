@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.navArgs
 import com.canonal.newsappjetpack.databinding.FragmentNewsDetailBinding
+import com.canonal.newsappjetpack.model.News
 
 
 class NewsDetailFragment : Fragment() {
@@ -29,8 +30,13 @@ class NewsDetailFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        binding.news = args.news
+        val widgetNews = arguments?.getParcelable<News>("myKey0")
+        if(widgetNews == null){
+            binding.news = args.news
 
+        }else{
+            binding.news = widgetNews
+        }
     }
 
     companion object {
