@@ -31,10 +31,12 @@ class NewsDetailFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         val widgetNews = arguments?.getParcelable<News>("myKey0")
-        if(widgetNews == null){
-            binding.news = args.news
 
-        }else{
+        if (widgetNews == null) {
+            //user comes from newsFragment
+            binding.news = args.news
+        } else {
+            //user comes from widget
             binding.news = widgetNews
         }
     }

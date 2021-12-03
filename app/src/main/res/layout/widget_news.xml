@@ -4,6 +4,7 @@
     android:layout_height="match_parent">
 
     <Button
+        android:background="@color/nba_blue"
         android:gravity="center"
         android:id="@+id/tvWidget"
         android:layout_width="match_parent"
