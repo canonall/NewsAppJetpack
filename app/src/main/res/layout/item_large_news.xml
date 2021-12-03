@@ -12,6 +12,9 @@
     <RelativeLayout
         android:id="@+id/rlLargeNews"
         android:padding="8dp"
+        android:elevation="3dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/white"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -19,7 +22,7 @@
             android:id="@+id/ivLargeNewsImage"
             android:layout_width="match_parent"
             binding:imageUrl="@{largeNews.imageUrl}"
-            android:layout_height="197dp"
+            android:layout_height="160dp"
             android:layout_centerHorizontal="true"
             android:contentDescription="@string/large_news_image"
             android:scaleType="fitCenter"
@@ -35,7 +38,7 @@
             android:layout_alignEnd="@+id/ivLargeNewsImage"
             android:layout_marginTop="5dp"
             android:textColor="@color/black"
-            android:textSize="20sp"
+            android:textSize="18sp"
             android:textStyle="bold"
             tools:text="@string/large_news_title_1" />
 

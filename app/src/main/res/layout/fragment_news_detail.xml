@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:binding="http://schemas.android.com/apk/res-auto">
+    xmlns:binding="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <data>
 
@@ -11,17 +11,20 @@
     </data>
 
     <RelativeLayout
+        android:id="@+id/rlNewsDetail"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/white"
+        android:padding="8dp"
         tools:context=".fragment.NewsDetailFragment">
 
         <ImageView
             android:id="@+id/ivNewsDetailImage"
             android:layout_width="match_parent"
             android:layout_height="197dp"
-            binding:imageUrl="@{news.imageUrl}"
             android:contentDescription="@string/detail_news_image"
             android:scaleType="fitCenter"
+            binding:imageUrl="@{news.imageUrl}"
             tools:background="@drawable/type_one_image" />
 
         <TextView
@@ -29,10 +32,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/ivNewsDetailImage"
-            android:layout_marginStart="5dp"
+            android:layout_alignStart="@+id/ivNewsDetailImage"
+            android:layout_alignEnd="@+id/ivNewsDetailImage"
+            android:layout_marginTop="8dp"
             android:text="@{news.title}"
             android:textColor="@color/black"
-            android:textSize="20sp"
+            android:textSize="18sp"
             tools:text="@string/large_news_title_1" />
 
         <TextView
@@ -55,6 +60,7 @@
             android:layout_below="@id/tvNewsDetailText"
             android:layout_alignStart="@id/tvNewsDetailTitle"
             android:layout_marginTop="8dp"
+            tools:text="29/11/2021"
             android:text="@{news.date}"
             android:textSize="11sp"
             android:textStyle="italic" />
