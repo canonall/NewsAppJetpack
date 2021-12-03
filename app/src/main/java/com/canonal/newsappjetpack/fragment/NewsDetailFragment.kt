@@ -15,12 +15,6 @@ class NewsDetailFragment : Fragment() {
     private lateinit var binding: FragmentNewsDetailBinding
     private val args: NewsDetailFragmentArgs by navArgs()
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-        }
-    }
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -41,14 +35,4 @@ class NewsDetailFragment : Fragment() {
         }
     }
 
-    companion object {
-
-        @JvmStatic
-        fun newInstance() =
-            NewsDetailFragment().apply {
-                arguments = Bundle().apply {
-
-                }
-            }
-    }
 }

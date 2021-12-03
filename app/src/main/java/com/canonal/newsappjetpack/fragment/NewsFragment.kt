@@ -13,18 +13,13 @@ import com.canonal.newsappjetpack.databinding.FragmentNewsBinding
 import com.canonal.newsappjetpack.model.News
 import com.canonal.newsappjetpack.util.AnimationUtil
 import com.canonal.newsappjetpack.util.DummyData
+import com.canonal.newsappjetpack.util.SplashUtil
 
 
 class NewsFragment : Fragment() {
 
     private lateinit var binding: FragmentNewsBinding
     private lateinit var newsList: List<News>
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-        }
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -53,14 +48,4 @@ class NewsFragment : Fragment() {
         binding.rvNews.setHasFixedSize(true)
     }
 
-    companion object {
-
-        @JvmStatic
-        fun newInstance() =
-            NewsFragment().apply {
-                arguments = Bundle().apply {
-
-                }
-            }
-    }
 }

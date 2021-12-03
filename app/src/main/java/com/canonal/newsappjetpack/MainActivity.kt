@@ -10,6 +10,8 @@ import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.*
 import com.canonal.newsappjetpack.databinding.ActivityMainBinding
+import com.canonal.newsappjetpack.util.SplashUtil
+import com.rbddevs.splashy.Splashy
 
 class MainActivity : AppCompatActivity() {
 
@@ -18,6 +20,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        SplashUtil.setSplashy(this)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
         val host: NavHostFragment =
@@ -35,6 +38,7 @@ class MainActivity : AppCompatActivity() {
         setupNavigationMenu(navController)
         setupActionBar(navController, appBarConfiguration)
     }
+
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.menu_overflow, menu)
