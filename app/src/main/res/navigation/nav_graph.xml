@@ -16,10 +16,9 @@
 
     </fragment>
     <fragment
-        android:id="@+id/profileFragment"
-        android:name="com.canonal.newsappjetpack.fragment.ProfileFragment"
-        android:label="fragment_profile"
-        />
+        android:id="@+id/preferencesFragment"
+        android:name="com.canonal.newsappjetpack.fragment.PreferencesFragment"
+        android:label="fragment_profile" />
 
     <fragment
         android:id="@+id/newsDetailFragment"
@@ -31,4 +30,9 @@
             android:name="news"
             app:argType="com.canonal.newsappjetpack.model.News" />
     </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        tools:layout="@layout/fragment_profile"
+        android:name="com.canonal.newsappjetpack.fragment.ProfileFragment"
+        android:label="ProfileFragment" />
 </navigation>

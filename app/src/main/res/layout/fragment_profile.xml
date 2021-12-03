@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".fragment.ProfileFragment">
+
+        <ImageView
+            android:id="@+id/ivProfileIcon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/ic_basketball_profile"
+            android:contentDescription="@string/profile_image" />
+
+        <TextView
+            android:id="@+id/tvUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivProfileIcon"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/username"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+</layout>

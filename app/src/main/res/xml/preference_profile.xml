@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen
-    xmlns:app="http://schemas.android.com/apk/res-auto">
-
-    <SwitchPreferenceCompat
-        app:key="notifications"
-        app:title="Enable message notifications"/>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
     <Preference
-        app:key="feedback"
-        app:title="Send feedback"
-        app:summary="Report technical issues or suggest new features"/>
+        android:layout="@layout/fragment_profile"/>
+
+    <Preference
+        app:icon="@drawable/ic_email"
+        app:key="@string/preference_email_key"
+        app:title="@string/preference_email_title"/>
+
+    <Preference
+        app:icon="@drawable/ic_payment"
+        app:key="@string/preference_subscription_key"
+        app:title="@string/preference_subscription_title"/>
 
 </PreferenceScreen>

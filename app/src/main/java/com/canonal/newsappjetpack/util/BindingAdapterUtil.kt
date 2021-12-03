@@ -2,6 +2,7 @@ package com.canonal.newsappjetpack.util
 
 import android.widget.ImageView
 import androidx.databinding.BindingAdapter
+import com.squareup.picasso.Callback
 import com.squareup.picasso.Picasso
 
 @BindingAdapter("imageUrl")

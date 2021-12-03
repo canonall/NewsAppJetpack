@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreferenceCompat
+        app:icon="@drawable/ic_notifications"
+        app:key="@string/preference_notifications_key"
+        app:title="@string/preference_notifications_title"/>
+
+    <Preference
+        app:icon="@drawable/ic_feedback"
+        app:key="@string/preference_feedback_key"
+        app:title="@string/preference_feedback_title"
+        app:summary="@string/preference_feedback_summary"/>
+
+    <Preference
+        app:icon="@drawable/ic_about"
+        app:key="@string/preference_about_key"
+        app:title="@string/preference_about_title"
+        app:summary="@string/preference_about_summary"/>
+
+</PreferenceScreen>
