@@ -1,13 +1,41 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
 
-    <Button
-        android:background="@color/nba_blue"
-        android:gravity="center"
-        android:id="@+id/tvWidget"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvWidgetHeadlines"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/nba" />
-</FrameLayout>
+        android:layout_height="50dp"
+        android:background="@color/nba_blue"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="@string/headlines"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvWidgetNewsTitle1"
+        style="@style/widgetTextView"
+        android:text="@string/large_news_title_1" />
+
+    <TextView
+        android:id="@+id/tvWidgetNewsTitle2"
+        style="@style/widgetTextView"
+        android:text="@string/short_news_title_1" />
+
+    <TextView
+        android:id="@+id/tvWidgetNewsTitle3"
+        style="@style/widgetTextView"
+        android:text="@string/short_news_title_2" />
+
+    <TextView
+        android:id="@+id/tvWidgetNewsTitle4"
+        style="@style/widgetTextView"
+        android:text="@string/large_news_title_2" />
+
+
+
+</LinearLayout>

@@ -31,8 +31,6 @@ class DummyData {
                 )
             )
 
-
-
             newsList.add(
                 ShortNews(
                     context.getString(R.string.short_news_title_2),

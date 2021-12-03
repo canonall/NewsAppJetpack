@@ -30,7 +30,7 @@ class NewsDetailFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        val widgetNews = arguments?.getParcelable<News>("myKey0")
+        val widgetNews = arguments?.getParcelable<News>("myKey")
 
         if (widgetNews == null) {
             //user comes from newsFragment
